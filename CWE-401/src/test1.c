@@ -16,5 +16,6 @@ char* getBlock(int fd) {
 int main(){
     char *buff;
     buff=getBlock(0);
+    free(buff);
     return 0;
 }

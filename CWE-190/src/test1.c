@@ -11,5 +11,6 @@ int main()
     if (len > 8000) {return 0; }
     buf = malloc(len);
     read(0, buf, len); /* len casted to unsigned and overflows */
+    free(buf);
     return 0;
 }
