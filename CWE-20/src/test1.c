@@ -29,6 +29,7 @@ int main(){
         printf("Value too large: Die evil hacker!\n");
     }
     board = (struct board_square_t*) malloc( m * n * sizeof(struct board_square_t));
+    free(board);
     return 0;
 }
 
