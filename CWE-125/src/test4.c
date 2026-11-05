@@ -1,6 +1,6 @@
 int main()
 {
-    int y=10;
+    int y=9;
     int a[10];
     while (y>=0) 
     {   

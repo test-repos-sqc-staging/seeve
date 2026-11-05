@@ -7,14 +7,13 @@ void dangerous_func ( int* ptr , int a, int b) {
          *ptr+= 2;
      } else {
          val=*ptr ; /* uFP: Use of null pointer detected : ptr */
-         free(ptr) ;
      }
      if(b) {
          val += 5;
      } else {
          val += *ptr ; /* TP: use after free detected : ptr */
      }
-     if(a) free(ptr) ;
+     free(ptr) ;
      printf ("val = %i\n", val) ;
      }
 
