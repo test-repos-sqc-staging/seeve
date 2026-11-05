@@ -10,11 +10,12 @@ int main (){
     strcpy(ptr,"This string is in the heap");
     if (err) {
         abrt = 1;
-        free(ptr);
         char* ptr2 = (char*) malloc(2*sizeof(char));
+        free(ptr2);
     }
     if (abrt) {
         printf("operation aborted before commit. Pointer value is ptr: %s",ptr);
     }
+    free(ptr);
     return 0;
 }
