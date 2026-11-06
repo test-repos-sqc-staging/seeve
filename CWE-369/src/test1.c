@@ -1,6 +1,12 @@
 int main()
 {
     int x;
-    x=1/0;
+    int divisor = 0;
+    if (divisor != 0) {
+        x=1/divisor;
+    } else {
+        x=0;
+    }
+    (void)x;
     return 0;
 }

@@ -2,7 +2,7 @@ int main()
 {
     int x;
     int y=0;
-    if (!y)
+    if (y != 0)
     {
         x=4/y;
     }
